@@ -8,10 +8,10 @@
 - [Push inicial](#pushinicial)
 - [Ignorar archivos](#ignorararchivos)
 - [Añadir fichero 1.txt](#añadirfichero)
-- [Ejercicio 5](#ejercicio5)
-- [Ejercicio 6](#ejercicio6)
-- [Ejercicio 7](#ejercicio7)
-- [Ejercicio 8](#ejercicio8)
+- [Crear el tag v0.1](#creartag)
+- [Subir el tag v0.1](#subirtag)
+- [Crear una rama v0.2](#crearrama)
+- [Añadir fichero 2.txt](#añadirfichero)
 - [Ejercicio 9](#ejercicio9)
 
 Clonamos el repositorio que acabamos de crear con el siguiente comando:
@@ -182,8 +182,89 @@ Para ello, usaremos los siguientes comandos:
 
 - salida: 
 
-
+```code
+  [main ea185a2] añadido 1.txt
+  2 files changed, 40 insertions(+), 2 deletions(-)
+  create mode 100644 1.txt
+```
 
 >Pregunta: Si ejecutado las acciones add y commit, que realiza cada una sobre el/los ficheros. Justifica tu respuesta en el fichero README.md.
 
 - 
+
+## Crear el tag v0.1 <a name="creartag"></a>
+
+- Para crear un tag v0.1, usaremos el siguiente comando 
+
+```code
+  git tag v0.1
+```
+
+- salida: 
+
+```code
+  Aunque no se muestre en la terminal, se ha creado el tag v0.1 
+```
+
+## Subir el tag v0.1 <a name="subirtag"></a>
+
+- Subir los cambios al repositorio remoto.
+
+```code
+  git push --tag origin master
+```
+
+- salida: 
+
+
+>Pregunta: ¿Qué es un tag sobre un repositorio git, en nuestro caso Github?. Justifica tu respuesta en el fichero README.md.
+
+- 
+
+# Crear una rama v0.2 <a name="crearrama"></a>
+
+- Crear una rama v0.2.
+
+```code
+  git branch v0.2
+```
+
+- salida: 
+
+```code
+
+```
+
+- Posiciona tu carpeta de trabajo en esta rama.
+
+```code
+  git checkout v0.2
+```
+
+- salida:
+
+```code
+  Cambiado a rama 'v0.2'
+```
+
+# Añadir fichero 2.txt <a name="añadirfichero"></a>
+
+- Añadir un fichero 2.txt en la rama v0.2.
+
+```code
+  touch 2.txt
+  git add .
+  git commit -m "añadido 2.txt"
+```
+
+- salida:
+
+```code
+
+```
+
+>Pregunta: Cuando estamos trabajando con ramas, cual es su fin, y sentido en organizaciones pequeñas/medianas/grandes. Justifica tu respuesta en el fichero README.md.
+
+
+
+
