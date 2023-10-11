@@ -5,8 +5,8 @@
 ## Indice
 
 - [Commit inicial](#commitinicial)
-- [Ejercicio 2](#ejercicio2)
-- [Ejercicio 3](#ejercicio3)
+- [Push inicial](#pushinicial)
+- [Ignorar archivos](#ignorararchivos)
 - [Ejercicio 4](#ejercicio4)
 - [Ejercicio 5](#ejercicio5)
 - [Ejercicio 6](#ejercicio6)
@@ -67,7 +67,85 @@ Para ello, usaremos los siguientes comandos:
 - salida:
 
 ```code
-  
+  Aunque no nos muestre nada en la terminal, se ha añadido lo hecho.
 ```
 
+- Para comentarlo, usamos:
 
+```code
+  git commit -m "commit inicial"
+```
+- salida:
+
+```code
+  [main 4c71bb8] commit inicial
+  1 file changed, 73 insertions(+), 1 deletion(-)
+  rewrite README.md (100%)
+```
+
+## Push inicial <a name="pushinicial"></a>
+
+- Subir los cambios al repositorio remoto.
+
+```code
+  git push origin master
+```
+>Pregunta: Si has clonado el repostorio es necesirio que parte del comando anterior puedo omitir.Justifica tu respuesta en el fichero README.md.
+
+```code
+  git push origin 
+```
+
+- salida:
+
+```code
+  Username for 'https://github.com': eduglezexp
+  Password for 'https://eduglezexp@github.com': 
+  Enumerando objetos: 5, listo.
+  Contando objetos: 100% (5/5), listo.
+  Compresión delta usando hasta 3 hilos
+  Comprimiendo objetos: 100% (2/2), listo.
+  Escribiendo objetos: 100% (3/3), 918 bytes | 918.00 KiB/s, listo.
+  Total 3 (delta 0), reusados 0 (delta 0), pack-reusados 0
+  To https://github.com/eduglezexp/my-proyecto-millonario.git
+  2bfe884..4c71bb8  main -> main
+```
+
+## Ignorar archivos <a name="ignorararchivos"></a>
+
+- Crear en el repositorio local un fichero llamado privado.txt.
+
+```code
+  touch privado.txt
+```
+
+- salida: 
+
+```code
+  Aunque no lo muestre la terminal, se ha creado un fichero en el repositorio local.
+```
+
+- Para crear en el repositorio local una carpeta llamada privada, usaremos el siguiente comando:
+
+```code
+  mkdir privada
+```
+
+- salida:
+
+```code
+  Aunque no lo muestre la terminal, se ha creado la carpeta en el repositorio local.
+```
+
+- Realizar los cambios oportunos para que tanto el archivo como la carpeta sean ignorados por git.
+
+## Operaciones a realizar:
+
+```code
+  echo "privado.txt" >> .gitignore
+  echo "/privada" >> .gitignore
+  git add .
+  git commit -m "añadido fichero .gitignore"
+```
+
+>Pregunta: el fichero y el directorio privado debe de subir al repositorio si se encuentra añadido al fichero .gitingnore. [Si/No]. Justifica tu respuesta en el fichero README.md.
