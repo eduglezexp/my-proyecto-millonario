@@ -7,7 +7,7 @@
 - [Commit inicial](#commitinicial)
 - [Push inicial](#pushinicial)
 - [Ignorar archivos](#ignorararchivos)
-- [Ejercicio 4](#ejercicio4)
+- [Añadir fichero 1.txt](#añadirfichero)
 - [Ejercicio 5](#ejercicio5)
 - [Ejercicio 6](#ejercicio6)
 - [Ejercicio 7](#ejercicio7)
@@ -92,6 +92,8 @@ Para ello, usaremos los siguientes comandos:
 ```
 >Pregunta: Si has clonado el repostorio es necesirio que parte del comando anterior puedo omitir.Justifica tu respuesta en el fichero README.md.
 
+- 
+
 ```code
   git push origin 
 ```
@@ -147,5 +149,41 @@ Para ello, usaremos los siguientes comandos:
   git add .
   git commit -m "añadido fichero .gitignore"
 ```
+- salida:
+
+```code
+  eduglezexp@eduglezexp-VirtualBox:~/my-proyecto-millonario$ echo "privado.txt" >> .gitignore
+  eduglezexp@eduglezexp-VirtualBox:~/my-proyecto-millonario$ echo "/privada" >> .gitignore
+  eduglezexp@eduglezexp-VirtualBox:~/my-proyecto-millonario$ git add .
+  eduglezexp@eduglezexp-VirtualBox:~/my-proyecto-millonario$ git commit -m "añadido fichero .gitignore"
+  [main 4ec4bf8] añadido fichero .gitignore
+  7 files changed, 115 insertions(+), 3 deletions(-)
+  create mode 100644 .gitignore
+  create mode 100644 .idea/.gitignore
+  create mode 100644 .idea/misc.xml
+  create mode 100644 .idea/modules.xml
+  create mode 100644 .idea/my-proyecto-millonario.iml
+  create mode 100644 .idea/vcs.xml
+```
 
 >Pregunta: el fichero y el directorio privado debe de subir al repositorio si se encuentra añadido al fichero .gitingnore. [Si/No]. Justifica tu respuesta en el fichero README.md.
+
+- 
+
+## Añadir fichero 1.txt <a name="añadirfichero"></a>
+
+- Añadir fichero 1.txt al repositorio local.
+
+```code
+  touch 1.txt
+  git add .
+  git commit -m "añadido 1.txt"
+```
+
+- salida: 
+
+
+
+>Pregunta: Si ejecutado las acciones add y commit, que realiza cada una sobre el/los ficheros. Justifica tu respuesta en el fichero README.md.
+
+- 
